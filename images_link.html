@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Image Links</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 20px;
+        }
+        header, nav, main, footer {
+            margin-bottom: 20;
+        }
+        nav a {
+            text-decoration: none;
+            color: blue;
+            margin-right: 20px;
+        }
+        nav a:hover {
+            text-decoration: underline;
+        }
+        .grid-container {
+            display: grid;
+            grid-template-columns: auto-fill,minmax(200px, 1fr);
+            gap: 20px;
+        }
+        .grid-item {
+            text-align: center;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Welcome to my page</h1>
+    </header>
+<nav>
+    <a href="#home">Home</a>
+    <a href="gallery">Gallery</a>
+    <a href="menu">Menu</a>
+</nav>   
+<main>
+    <section id="home">
+        <h2>Home</h2>
+        <p>Welcome to my home page. Here is an image related to technology</p>
+        <a href="https://stock.adobe.com/search?k=technology" target="_blank">
+            <img src="https://as2.ftcdn.net/v2/jpg/03/08/69/75/1000_F_308697506_9dsBYHXm9FwuW0qcEqimAEXUvzTwfzwe.jpg" alt="Technology Image">
+        </a>
+    </section>
+    <section id="gallery">
+        <h2>Gallery</h2>
+        <div class="grid-container">
+            <div class="grid-item">
+                <a href="https://www.freepik.com/photos/nature" target="_blank">
+                    <img src="https://img.freepik.com/free-photo/painting-mountain-lake-with-mountain-background_188544-9126.jpg?w=996&t=st=1710902887~exp=1710903487~hmac=c440cf0f81cc53fcf7875a716eca529257ed46eb43e51eb5e7c720edc1d12d51" alt="Nature Image 1">
+                </a>
+            </div>
+        </div>
+        <div class="grid-item">
+            <a href="https://www.istockphoto.com/photos/canada-nature" target="_blank">
+                <img src="https://media.istockphoto.com/id/525508231/photo/moraine-lake-rocky-mountains-canada.jpg?s=2048x2048&w=is&k=20&c=hVcNprsWELtpNX8df8ur4fzYt2p5VleDnhHhikNjDS4=" alt="Nature Image 2">
+            </a>
+        </div>
+        <div class="grid-item">
+            <a href="https://stock.adobe.com/search?k=nature+wallpaper+hd" target="_blank">
+                <img src="//as1.ftcdn.net/v2/jpg/05/68/49/90/1000_F_568499083_q9QfafI1PkGJA8QQMIpiTT557xUUJ4Qq.jpg" alt="Nature Image 3">
+            </a>
+        </div>
+    </section>
+    <section id="menu">
+        <h2>Menu</h2>
+        <ul>
+            <li><a href="https://www.allrecipes.com/recipe/48727/mikes-homemade-pizza/" target="_blank"><img src="https://www.allrecipes.com/thmb/ooZbu_yUBrGQ74uKbuOENWuNxMM=/750x0/filters:no_upscale():max_bytes(150000):strip_icc():format(webp)/48727-Mikes-homemade-pizza-DDMFS-beauty-4x3-BG-2974-a7a9842c14e34ca699f3b7d7143256cf.jpg" alt="Pizza">Pizza</a></li>
+            <li><a href="https://www.olivemagazine.com/recipes/collection/best-ever-quick-and-easy-pasta-recipes-ready-in-under-30-minutes/" target="_blank"><img src="https://images.immediate.co.uk/production/volatile/sites/2/2021/03/ASPARAGUS-AND-ANCHOVY-PASTA-WITH-FENNEL-SEED-PANGRATTATO-7688779.jpg?quality=90&webp=true&resize=975,649" alt="Pasta">Pasta</a></li>
+            <li><a href="https://scientificallysweet.com/the-best-moist-chocolate-cake/" target="_blank"><img src="https://scientificallysweet.com/wp-content/uploads/2023/06/IMG_4087-er-new1-720x910.jpg" alt="Cake">Cake</a></li>
+        </ul>
+    </section>
+</main> 
+<footer>
+    <p>&copy; 2024 My Page. All Rights Reserved.</p>
+</footer>
+</body>
+</html>
